@@ -1,5 +1,5 @@
 .bg__img {
-  background: url("../../img/home/bg/overlay90.jpg") no-repeat center;
+  background: url("../../img/home/bg/overlay90.jpg") no-repeat 18%;
   padding-top: 32px;
   background-size: cover;
   /* height: 600px; */
@@ -8,8 +8,8 @@
   /* object-fit: cover; */
   /* box-sizing: border-box; */
 
-  /* background: #222222;
-  padding-top: 40px; */
+  /* background: #222222; */
+  /* padding-top: 40px; */
 }
 
 @media (max-width: 800px) {
@@ -17,3 +17,9 @@
     padding-top: 12px;
   }
 }
+
+/* @media (max-width: 400px) {
+  .bg__img {
+    background-position: 18% 75%;
+  }
+} */
