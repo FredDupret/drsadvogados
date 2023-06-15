@@ -1,0 +1,19 @@
+.bg__img {
+  background: url("../../img/home/bg/overlay90.jpg") no-repeat center;
+  padding-top: 32px;
+  background-size: cover;
+  height: 600px;
+
+  /* max-height: max-content; */
+  /* object-fit: cover; */
+  /* box-sizing: border-box; */
+
+  /* background: #222222;
+  padding-top: 40px; */
+}
+
+@media (max-width: 800px) {
+  .bg__img {
+    padding-top: 12px;
+  }
+}
