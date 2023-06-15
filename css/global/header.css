@@ -136,6 +136,6 @@
   }
 
   .header__menu li {
-    flex: 100%;
+    /* flex: 100%; */
   }
 }

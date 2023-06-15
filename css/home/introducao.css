@@ -11,6 +11,7 @@
 
 .introducao h1 {
   margin-bottom: 120px;
+  /* white-space: nowrap; */
 }
 
 .introducao__links {
@@ -70,6 +71,10 @@
   .introducao__links a {
     font-size: 1rem;
   }
+
+  .introducao__seta img {
+    width: 90px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -89,5 +94,9 @@
 
   .introducao__links a {
     font-size: 0.875rem;
+  }
+
+  .introducao__seta img {
+    width: 60px;
   }
 }
