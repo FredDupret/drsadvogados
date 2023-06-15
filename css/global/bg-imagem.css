@@ -1,5 +1,7 @@
 .bg__img {
+  /* position: relative; */
   background: url("../../img/home/bg/overlay90.jpg") no-repeat 18%;
+
   padding-top: 32px;
   background-size: cover;
   /* height: 600px; */
@@ -9,7 +11,16 @@
   /* box-sizing: border-box; */
 
   /* background: #222222; */
+
   /* padding-top: 40px; */
+}
+
+.bg__img video {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  display: block;
+  z-index: -1;
 }
 
 @media (max-width: 800px) {
