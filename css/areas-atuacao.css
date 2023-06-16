@@ -62,7 +62,7 @@
 .galeria__bg {
   background: var(--cor-c2);
   width: 100vw;
-  height: 220px;
+  height: 212px;
   border-top: 3px solid var(--cor-p1);
   border-bottom: 3px solid var(--cor-p1);
   position: absolute;
@@ -89,6 +89,7 @@
   grid-column: 1 / -1;
   display: flex;
   justify-content: center;
+  text-decoration: underline;
 }
 
 /* Media Queries */
