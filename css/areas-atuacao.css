@@ -40,11 +40,15 @@
   position: relative;
   display: flex;
   align-items: flex-end;
+  transition: 0.2s;
   /* object-fit: cover; */
 }
 
+/* span[data-descr]:hover::after  */
+
 .areas__galeria__img::after {
   content: "Trabalhista";
+  width: 160px;
   display: block;
   position: absolute;
   background: var(--cor-p1);
@@ -55,6 +59,7 @@
   letter-spacing: 0.015em;
   text-transform: uppercase;
   flex: 1;
+  transition: 0.2s;
 }
 
 .areas__galeria__img:nth-child(2)::after {
@@ -73,6 +78,17 @@
   background: var(--cor-p1);
   position: absolute;
   top: 30px;
+  transition: 0.2s;
+}
+
+.areas__galeria__img:hover {
+  box-shadow: 0 0 0 2px #f5d861;
+  border-color: #f5d861;
+}
+
+.areas__galeria__img:hover::after,
+.areas__galeria__img:hover::before {
+  background-color: #f5d861;
 }
 
 .areas__link {
@@ -86,10 +102,19 @@
   height: 4px;
   background-color: var(--cor-c2);
   display: block;
+  transition: 0.2s;
+}
+
+.areas__link a:hover::after {
+  background-color: var(--cor-p1);
 }
 
 /* Media queries */
 @media (max-width: 800px) {
+  .areas {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   .areas__conteudo {
     margin-bottom: 40px;
   }
@@ -117,6 +142,7 @@
   .areas__galeria__img::after {
     font-size: 1rem;
     letter-spacing: 0.015em;
+    width: 110px;
   }
 
   .areas__galeria__img::before {
@@ -136,15 +162,18 @@
 }
 
 @media (max-width: 500px) {
+  .areas {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .areas__conteudo {
     margin-bottom: 20px;
   }
   .areas__conteudo h2 {
-    font-size: 1.5rem;
+    font-size: 1.875rem;
   }
-  .areas__conteudo p {
-    font-size: 0.75rem;
-  }
+
   .areas__galeria {
     flex-direction: column;
     align-items: center;
@@ -168,6 +197,7 @@
   .areas__galeria__img::after {
     font-size: 0.75rem;
     letter-spacing: 0.015em;
+    width: 80px;
   }
 
   .areas__galeria__img::before {
