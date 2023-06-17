@@ -14,6 +14,10 @@
   font: 500 1rem/1.5 "Poppins", sans-serif;
 }
 
+.font-2-m {
+  font: 400 1.5rem/1.5 "Barlow", sans-serif;
+}
+
 .font-2-x {
   font: 500 1.25rem/1.4 "Barlow", sans-serif;
   letter-spacing: 0.015em;
