@@ -82,13 +82,13 @@
 }
 
 .areas__galeria__img:hover {
-  box-shadow: 0 0 0 2px #f5d861;
-  border-color: #f5d861;
+  box-shadow: 0 0 0 2px var(--cor-p2);
+  border-color: var(--cor-p2);
 }
 
 .areas__galeria__img:hover::after,
 .areas__galeria__img:hover::before {
-  background-color: #f5d861;
+  background-color: var(--cor-p2);
 }
 
 .areas__link {
@@ -106,14 +106,14 @@
 }
 
 .areas__link a:hover::after {
-  background-color: var(--cor-p1);
+  background-color: var(--cor-p2);
 }
 
 /* Media queries */
 @media (max-width: 800px) {
   .areas {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .areas__conteudo {
     margin-bottom: 40px;
@@ -163,8 +163,8 @@
 
 @media (max-width: 500px) {
   .areas {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .areas__conteudo {
